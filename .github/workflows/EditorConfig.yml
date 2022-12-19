@@ -4,14 +4,14 @@ on:
   pull_request:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   lint:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [ 16.x ]
+        node-version: [16.x]
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
